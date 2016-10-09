@@ -20,5 +20,7 @@ Nakon brisanja originalnog .dll-a sa disku, aplikacija i dalje radi jer je u bin
 Nakon brisanja originalnog .dll-a sa diska, build projekta i dalje prolazi jer se projekt sada referencira na .dll iz bin/debug foldera, a ne na sada nepostojeći originalni .dll.
 
 #6
-Navedeno se odnosi na MonoDevelop IDE
-Ako pobrišemo NodaTime direktorij iz packages direktorija, aplikaciju možemo buildati ako nismo koristili NodaTime paket (dobivamo warning). Ako smo u programu koristili NodaTime paket compiler će javiti error koji nam govori da build proces nije uspio pronaći NodaTime namespace iako je NodaTime naveden u packages.config datoteci. S obzirom da je NodaTime paket naveden u packages.config datoteci možemo desnim klikom na packages direktorij te odabirom opcije restore ili update ponovno skinuti NodaTime paket. Build proces nakon toga prolazi
+Navedeno se odnosi na MonoDevelop IDE.
+Ako pobrišemo NodaTime direktorij iz packages direktorija, aplikaciju možemo buildati ako nismo koristili NodaTime paket (dobivamo warning). Ako smo u programu koristili NodaTime paket compiler će javiti error koji nam govori da build proces nije uspio pronaći NodaTime namespace iako je NodaTime naveden u packages.config datoteci. S obzirom da je NodaTime paket naveden u packages.config datoteci možemo desnim klikom na packages direktorij te odabirom opcije restore ili update ponovno skinuti NodaTime paket. Build proces nakon toga prolazi.
+<img src="https://raw.githubusercontent.com/Sokre95/RAUPJC_0DZ/master/nodaTIme.png" width="248px">
+<img src="https://raw.githubusercontent.com/Sokre95/RAUPJC_0DZ/master/error.png" width="348px">
